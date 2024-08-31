@@ -43,6 +43,9 @@ export const FeatureData = [
 import ImageOne from "../src/assets/HomeComponentImages/Latest1.png"
 import ImageTwo from "../src/assets/HomeComponentImages/Latest2.png"
 import ImageThree from "../src/assets/HomeComponentImages/Latest3.png"
+import ImageFour from "../src/assets/HomeComponentImages/Latest4.png"
+import ImageFive from "../src/assets/HomeComponentImages/image3.png"
+import Imagesix from "../src/assets/HomeComponentImages/image23.png"
 
 
 export const LatestData = [
@@ -67,6 +70,33 @@ export const LatestData = [
   {
     id: 3,
     img: ImageThree,
+    baze: true,
+    title: "Comfort Handy Craft",
+    Mprise: 105.00,
+    discountPrice: 8.00,
+    Product: "sale",
+  },
+  {
+    id: 4,
+    img: ImageFive,
+    baze: true,
+    title: "Comfort Handy Craft",
+    Mprise: 105.00,
+    discountPrice: 8.00,
+    Product: "sale",
+  },
+  {
+    id: 5,
+    img: ImageFour,
+    baze: true,
+    title: "Comfort Handy Craft",
+    Mprise: 105.00,
+    discountPrice: 8.00,
+    Product: "sale",
+  },
+  {
+    id: 6,
+    img: Imagesix,
     baze: true,
     title: "Comfort Handy Craft",
     Mprise: 105.00,
