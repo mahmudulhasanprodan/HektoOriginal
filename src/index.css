@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Root Element */
+:root{
+  --Josefin:"Josefin Sans", sans-serif;
+  --Lato: "Lato", sans-serif;
+  --BtnColor: #FB2E86;
+  --FooterColor: #EEEFFB;
+  --FooterBtmColor: #E7E4F8;
+  --ItemColor: #F7F7F7;
+  --HoverColor: #2F1AC4;
+  --HeaderTopColor: #7E33E0;
+  --CommonColor: #ffff;
+  --LogoColor: #0D0E43;
+  --BannerBg: #F2F0FF;
+  --CardColor: #F6F7FB;
+  --FtextColor: #1A0B5B;
+  --SecondBtnColor: #08D15F;
+}
+
+/* Root Element */
+
+/* Common css */
+
+@layer base{
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+   *{
+    @apply m-0 p-0 outline-none box-border;
+   };
+   img{
+    @apply align-middle;
+   };
+  a{
+    @apply inline-block no-underline;
+  };
+  ul,ol,li{
+      @apply list-none;
+  };
+  h1,h2,h3,h4,h5,h6,ul,ol,li,img,div,span,p,a{
+   @apply m-0 p-0;
+  };
+};
+
+/* Common Css */
