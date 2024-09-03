@@ -107,4 +107,69 @@ export const LatestData = [
 
 
 
+// Trending Product Image Here
+import TrendImg1 from "../src/assets/HomeComponentImages/TrendingOne.png"
+import TrendImg2 from "../src/assets/HomeComponentImages/TrendingTwo.png"
+import TrendImg3 from "../src/assets/HomeComponentImages/TrendingThree.png"
+import TrendImg4 from "../src/assets/HomeComponentImages/TrendingFour.png"
+
+
+export const TrendingData = [
+  { id: 1, img: TrendImg1, title: "Cantilever chair", price: 50, discount: 15 },
+  { id: 2, img: TrendImg2, title: "Cantilever chair", price: 60, discount: 12 },
+  { id: 3, img: TrendImg3, title: "Cantilever chair", price: 80, discount: 10 },
+  { id: 4, img: TrendImg4, title: "Cantilever chair", price: 70, discount: 20 },
+];
+
+// Off Product Image Here
+
+import OffpicOne from "../src/assets/HomeComponentImages/Offone.png"
+import OffpicTwo from "../src/assets/HomeComponentImages/Offtwo.png"
+
+
+export const OffData = [
+  {
+    id: 1,
+    img: OffpicOne,
+    bacground: true,
+    title: "23% off in all products",
+    BtnName: "Shop Now",
+  },
+  {
+    id: 2,
+    img: OffpicTwo,
+    bacground: false,
+    title: "23% off in all products",
+    BtnName: "View Collection",
+  },
+];
+
+// offsideData Image here 
+import OffpicThree from "../src/assets/HomeComponentImages/Offthree.png"
+import OffpicFour from "../src/assets/HomeComponentImages/Offfour.png"
+import OffpicFive from "../src/assets/HomeComponentImages/Offfive.png"
+
+
+export const offsideData = [
+  {
+    id: 1,
+    img: OffpicThree,
+    title: "Executive Seat chair",
+    price: "$32.00",
+  },
+  {
+    id: 2,
+    img: OffpicFour,
+    title: "Executive Seat chair",
+    price: "$42.00",
+  },
+  {
+    id: 3,
+    img: OffpicFive,
+    title: "Executive Seat chair",
+    price: "$22.00",
+  },
+  
+];
+
 

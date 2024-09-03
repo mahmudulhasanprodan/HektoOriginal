@@ -26,6 +26,7 @@ export default {
         CardColor: "var(--CardColor)",
         FtextColor: "var(--FtextColor)",
         SecondBtnColor: "var(--SecondBtnColor)",
+        OpacityColor: "var(--OpacityColor)",
       },
       dropShadow: {
         CardShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",

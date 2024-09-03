@@ -5,6 +5,9 @@ import Banner from '../../HomeComponent/Banner/Banner'
 import FeatureProduct from '../../HomeComponent/FeatureProduct/FeatureProduct'
 import LatestProduct from '../../HomeComponent/LatestProduct/LatestProduct'
 import Shopex from '../../HomeComponent/Shopex/Shopex'
+import TrendingBanner from '../../HomeComponent/TrendingBanner/TrendingBanner'
+import TrendingProduct from '../../HomeComponent/TrendingProduct/TrendingProduct'
+import OffProduct from '../../HomeComponent/OffProduct/OffProduct'
 
 const Home = () => {
   return (
@@ -15,6 +18,9 @@ const Home = () => {
       <FeatureProduct title={"Featured Products"}/>
       <LatestProduct title={"Leatest Products"}/>
       <Shopex />
+      <TrendingBanner />
+      <TrendingProduct title={"Trending Products"}/>
+      <OffProduct />
     </>
   )
 }
