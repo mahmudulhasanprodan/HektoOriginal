@@ -8,6 +8,7 @@ import Shopex from '../../HomeComponent/Shopex/Shopex'
 import TrendingBanner from '../../HomeComponent/TrendingBanner/TrendingBanner'
 import TrendingProduct from '../../HomeComponent/TrendingProduct/TrendingProduct'
 import OffProduct from '../../HomeComponent/OffProduct/OffProduct'
+import DiscountPart from '../../HomeComponent/DiscoutPart/DiscountPart'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <TrendingBanner />
       <TrendingProduct title={"Trending Products"}/>
       <OffProduct />
+      <DiscountPart title={"Discount Item"}/>
     </>
   )
 }
