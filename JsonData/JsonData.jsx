@@ -173,3 +173,46 @@ export const offsideData = [
 ];
 
 
+
+
+export const CatagriesData = [
+  { id: 1, title: "Mini LCW Chair", price: "$36.00" },
+  { id: 2, title: "Mini LCW Chair", price: "$46.00" },
+  { id: 3, title: "Mini LCW Chair", price: "$26.00" },
+  { id: 4, title: "Mini LCW Chair", price: "$66.00" },
+];
+
+
+// Latest Blog Image Here 
+
+import BlogOne from "../src/assets/HomeComponentImages/Blog1.png"
+import BlogTwo from "../src/assets/HomeComponentImages/Blog2.png"
+import BlogThree from "../src/assets/HomeComponentImages/Blog3.png"
+
+
+export const LatestBlogData = [
+  {
+    id: 1,
+    img: BlogOne,
+    title: "Top esssential Trends in 2021",
+    Btn: true,
+    Details:
+      "More off this less hello samlande lied muchover tightly circa horse taped mightly...",
+  },
+  {
+    id: 2,
+    img: BlogTwo,
+    title: "Top esssential Trends in 2021",
+    Btn: true,
+    Details:
+      "More off this less hello samlande lied muchover tightly circa horse taped mightly...",
+  },
+  {
+    id: 3,
+    img: BlogThree,
+    title: "Top esssential Trends in 2021",
+    Btn: true,
+    Details:
+      "More off this less hello samlande lied muchover tightly circa horse taped mightly...",
+  },
+];
