@@ -172,14 +172,18 @@ export const offsideData = [
   
 ];
 
+//CatagriesData Image Here
 
-
+import cataImage1 from "../src/assets/HomeComponentImages/TrendingThree.png"
+import cataImage2 from "../src/assets/HomeComponentImages/image23.png"
+import cataImage3 from "../src/assets/HomeComponentImages/TrendingOne.png"
+import cataImage4 from "../src/assets/HomeComponentImages/TrendingTwo.png"
 
 export const CatagriesData = [
-  { id: 1, title: "Mini LCW Chair", price: "$36.00" },
-  { id: 2, title: "Mini LCW Chair", price: "$46.00" },
-  { id: 3, title: "Mini LCW Chair", price: "$26.00" },
-  { id: 4, title: "Mini LCW Chair", price: "$66.00" },
+  { id: 1, img:cataImage1, title: "Mini LCW Chair", price: "$36.00" },
+  { id: 2, img:cataImage2, title: "Mini LCW Chair", price: "$46.00" },
+  { id: 3, img:cataImage3, title: "Mini LCW Chair", price: "$26.00" },
+  { id: 4, img:cataImage4, title: "Mini LCW Chair", price: "$66.00" },
 ];
 
 

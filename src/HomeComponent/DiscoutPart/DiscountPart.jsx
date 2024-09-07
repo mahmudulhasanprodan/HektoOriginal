@@ -18,7 +18,7 @@ const DiscountPart = ({title}) => {
             <div className="flex items-center justify-center gap-x-14 mt-4">
               <Link
                 to={"/"}
-                className="font-Lato text-lg hover:text-BtnColor hover:underline"
+                className="font-Lato text-lg text-BtnColor  hover:underline"
               >
                 Wood Chair
               </Link>

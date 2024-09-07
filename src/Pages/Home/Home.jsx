@@ -12,6 +12,8 @@ import DiscountPart from '../../HomeComponent/DiscoutPart/DiscountPart'
 import TopCatagories from '../../HomeComponent/TopCatagories/TopCatagories'
 import Updatebanner from '../../HomeComponent/UpdateBanner/Updatebanner'
 import LatestBlog from '../../HomeComponent/LatestBlog/LatestBlog'
+import FooterTop from '../../HomeComponent/Footer/FooterTop/FooterTop'
+import FooterBottom from '../../HomeComponent/Footer/FooterBottom/FooterBottom'
 
 const Home = () => {
   return (
@@ -29,6 +31,8 @@ const Home = () => {
       <TopCatagories title={"Top Catagories"}/>
       <Updatebanner />
       <LatestBlog  title={"Leatest Blog"}/> 
+      <FooterTop />
+      <FooterBottom />
     </>
   )
 }

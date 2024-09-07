@@ -16,7 +16,11 @@ const TopCatagories = ({title}) => {
             </div>
             <Flex className={"items-center justify-between mt-10"}>
               {CatagriesData?.map((item) => (
-                <TopCatagoriesCard title={item.title} Price={item.price} />
+                <TopCatagoriesCard
+                  title={item.title}
+                  Price={item.price}
+                  Image={item.img}
+                />
               ))}
             </Flex>
           </div>

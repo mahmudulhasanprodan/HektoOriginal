@@ -7,6 +7,7 @@ export default {
   theme: {
     container: {
       center: true,
+      
     },
     fontFamily: {
       Josefin: "var(--Josefin)",
