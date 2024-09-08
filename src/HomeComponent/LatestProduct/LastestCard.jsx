@@ -21,7 +21,7 @@ const HandleMouseleave = () => {
   return (
     <div>
       <div
-        className="w-[360px] h-[305px] shadow-md cursor-pointer"
+        className="w-[300px] md:w-[400px] h-[325px] shadow-md cursor-pointer"
         onMouseEnter={HandleMouseEnter}
         onMouseLeave={HandleMouseleave}
       >
@@ -42,7 +42,7 @@ const HandleMouseleave = () => {
             </picture>
           </div>
         </div>
-        <div className="flex items-center justify-between px-2 h-[35px] bg-CommonColor">
+        <div className="flex items-center justify-between px-2 h-[35px] bg-CommonColor mt-2">
           <h2 className="font-Josefin font-semibold text-FtextColor text-base">
             {title ? title : "No title"}
           </h2>

@@ -36,7 +36,7 @@ const DiscountPart = ({title}) => {
               </Link>
             </div>
           </div>
-          <Flex className={"items-center"}>
+          <Flex className={"items-center justify-between"}>
             <div className="w-1/2">
               <div>
                 <h2 className="font-Josefin font-bold text-3xl text-FtextColor">

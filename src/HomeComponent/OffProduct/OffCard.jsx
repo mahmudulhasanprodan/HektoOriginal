@@ -1,13 +1,12 @@
 import React from 'react'
-import img1 from "../../assets/HomeComponentImages/Offone.png"
 
 const OffCard = ({BtnTitle, title, Image,className}) => {
   return (
     <>
       <div>
         <div className={className}>
-          <div className="flex relative">
-            <div className="p-5 overflow-hidden">
+          <div className="flex relative h-24">
+            <div className="p-5 overflow-hidden h-24">
               <h2 className="font-Josefin font-semibold text-lg text-FtextColor">
                 {title ? title : "No Title"}
               </h2>
@@ -15,11 +14,11 @@ const OffCard = ({BtnTitle, title, Image,className}) => {
                 {BtnTitle ? BtnTitle : "No Title"}
               </button>
             </div>
-            <div className="absolute right-8 top-10">
-              <picture>
-                <img src={Image} alt={Image} />
-              </picture>
-            </div>
+          </div>
+          <div className="flex items-center justify-end h-48 pr-4">
+            <picture>
+              <img src={Image} alt={Image} />
+            </picture>
           </div>
         </div>
       </div>

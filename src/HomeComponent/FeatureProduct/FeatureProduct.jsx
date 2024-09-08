@@ -15,7 +15,7 @@ const FeatureProduct = ({title}) => {
                 {title ? title : "Title Missing"}
               </h2>
             </div>
-            <div className="flex items-center gap-x-8 justify-center">
+            <div className="flex flex-wrap items-center justify-center md:justify-between px-4 md:px-0">
               {FeatureData?.map((item) => (
                 <div>
                   <FeatureCategori title={item.title} CodeId={item.code} Fprice={item.Price} Image={item.img}/>

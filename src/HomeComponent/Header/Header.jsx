@@ -12,39 +12,75 @@ import { FaCartPlus } from "react-icons/fa6";
 const Header = () => {
   return (
     <>
-      <div className="bg-HeaderTopColor">
+      <div className="bg-HeaderTopColor hidden md:block">
         <div className="container">
-          <Flex className={"items-center justify-between py-2"}>
+          <Flex className={"items-center justify-between py-2 px-4 md:px-0"}>
             <div className="flex items-center gap-x-20">
-              <div className="flex items-center text-CommonColor gap-x-3 cursor-pointer">
-                <span className="font-bold"><GrMailOption className="w-[16px] h-[16px]"/></span>
-                <h2 className="text-CommonColor font-Josefin text-sm font-semibold">mahmudulhasan8627@gmail.com</h2>
+              <div className="hidden md:block">
+                <div className="flex items-center text-CommonColor gap-x-3 cursor-pointer">
+                  <span className="font-bold">
+                    <GrMailOption className="w-[16px] h-[16px]" />
+                  </span>
+                  <h2 className="text-CommonColor font-Josefin text-sm font-semibold">
+                    mahmudulhasan8627@gmail.com
+                  </h2>
+                </div>
               </div>
               <div className="flex items-center text-CommonColor gap-x-3 cursor-pointer">
-                <span><FaPhoneVolume  className="w-[16px] h-[16px]"/></span>
-                <h2 className="text-CommonColor font-Josefin text-sm font-semibold">(12345)67890</h2>
+                <span>
+                  <FaPhoneVolume className="w-[16px] h-[16px]" />
+                </span>
+                <h2 className="text-CommonColor font-Josefin text-sm font-semibold">
+                  (12345)67890
+                </h2>
               </div>
             </div>
             {/* Right item list  */}
             <div className="flex items-center gap-x-6">
-              <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
-                <p className="text-CommonColor font-Josefin text-sm font-semibold">English</p>
-                <span><FaAngleDown /></span>
+              <div className="hidden md:block">
+                <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
+                  <p className="text-CommonColor font-Josefin text-sm font-semibold">
+                    English
+                  </p>
+                  <span>
+                    <FaAngleDown />
+                  </span>
+                </div>
               </div>
-              <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
-                <p className="text-CommonColor font-Josefin text-sm font-semibold">USD</p>
-                <span><FaAngleDown /></span>
+              <div className="hidden md:block">
+                <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
+                  <p className="text-CommonColor font-Josefin text-sm font-semibold">
+                    USD
+                  </p>
+                  <span>
+                    <FaAngleDown />
+                  </span>
+                </div>
               </div>
-              <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
-                <p className="text-CommonColor font-Josefin text-sm font-semibold">Login</p>
-                <span><FaRegUser className="w-[14px] h-[14px]"/></span>
+              <div>
+                <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
+                  <p className="text-CommonColor font-Josefin text-sm font-semibold">
+                    Login
+                  </p>
+                  <span>
+                    <FaRegUser className="w-[14px] h-[14px]" />
+                  </span>
+                </div>
               </div>
-              <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
-                <p className="text-CommonColor font-Josefin text-sm font-semibold">Wishlist</p>
-                <span><FaRegHeart /></span>
+              <div className="hidden md:block">
+                <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
+                  <p className="text-CommonColor font-Josefin text-sm font-semibold">
+                    Wishlist
+                  </p>
+                  <span>
+                    <FaRegHeart />
+                  </span>
+                </div>
               </div>
-              <div className="text-CommonColor cursor-pointer">
-                <span className="font-bold"><FaCartPlus /></span>
+              <div className="text-CommonColor cursor-pointer hidden md:block">
+                <span className="font-bold">
+                  <FaCartPlus />
+                </span>
               </div>
             </div>
             {/* Right item list */}

@@ -4,7 +4,7 @@ import React from 'react'
 const TrendingCard = ({title,Image,MainPrice,Price}) => {
   return (
     <div className="py-10">
-      <div className="w-[270px] h-[350px] bg-CommonColor shadow-md">
+      <div className="w-[300px] h-[370px] bg-CommonColor shadow-md">
         <div className="w-[245px] h-[244px] bg-CardColor m-auto mt-3">
           <picture>
             <img src={Image} alt={Image} />

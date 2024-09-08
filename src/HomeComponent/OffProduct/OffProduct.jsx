@@ -8,11 +8,11 @@ const OffProduct = () => {
     <>
       <div className="py-10">
         <div className="container">
-          <div className="flex gap-x-7 justify-center">
+          <div className="flex justify-between">
             {OffData?.map((item) => (
               <div key={item.id}>
                 <OffCard
-                  className={`w-[420px] h-64 ${
+                  className={`w-[500px] h-72 ${
                     item.bacground === true ? "bg-[#FFF6FB]" : "bg-[#EEEFFB]"
                   }`}
                   title={item.title}
@@ -23,7 +23,7 @@ const OffProduct = () => {
               </div>
             ))}
             {/*side part off product*/}
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between cursor-pointer">
               {offsideData?.map((item) => (
                 <div className="flex items-center gap-x-5">
                   <div className="w-24 h-16 bg-[#F5F6F8] flex items-center justify-center p-4">

@@ -7,21 +7,21 @@ const FooterTop = () => {
     <>
       <div className="bg-FooterColor py-20">
         <div className="container">
-          <Flex className={"justify-between"}>
-            <div className="flex flex-colgap-y-4">
+          <Flex className={"justify-between pr-16 px-4 md:px-0"}>
+            <div className="flex flex-col gap-y-4">
               <div className="flex flex-col gap-y-6">
                 <h2 className="font-bold font-Josefin text-3xl text-LogoColor">
                   Hekto
                 </h2>
-                <div>
+                <div className="">
                   <input
                     type="text"
                     id="footersearch"
                     name="footersearch"
                     placeholder="Enter Email Address"
-                    className="w-56 pl-3 py-2"
+                    className="w-48 md:w-56 pl-3 py-2"
                   />
-                  <button className="py-2 px-6 bg-BtnColor rounded-tr-md rounded-br-md text-CommonColor font-Josefin">
+                  <button className="py-2 px-2 md:px-6 bg-BtnColor rounded-tr-md rounded-br-md text-CommonColor font-Josefin">
                     Sign Up
                   </button>
                 </div>
@@ -35,45 +35,47 @@ const FooterTop = () => {
                 </div>
               </div>
             </div>
-            <Flex className={"gap-x-20"}>
-              <div>
-                <FooterTopitem
-                  Title={"Catagories"}
-                  AllItem={[
-                    "Laptops & Computers",
-                    "Cameras & Photography",
-                    "Smart Phones & Tablets",
-                    "Video Games & Consoles",
-                    "Waterproof Headphones",
-                  ]}
-                />
-              </div>
-              <div>
-                <FooterTopitem
-                  Title={"Customer Care"}
-                  AllItem={[
-                    "My Account",
-                    "Discount",
-                    "Returns",
-                    "Order History",
-                    "Order Tracking",
-                  ]}
-                />
-              </div>
-              <div>
-                <FooterTopitem
-                  Title={"Pages"}
-                  AllItem={[
-                    "Blog",
-                    "Browse the Shop",
-                    "Category",
-                    "Pre-Built Pages",
-                    "Visual Composer Elements",
-                    "WooCommerce Pages",
-                  ]}
-                />
-              </div>
-            </Flex>
+            <div className="hidden md:block">
+              <Flex className={"gap-x-20"}>
+                <div>
+                  <FooterTopitem
+                    Title={"Catagories"}
+                    AllItem={[
+                      "Laptops & Computers",
+                      "Cameras & Photography",
+                      "Smart Phones & Tablets",
+                      "Video Games & Consoles",
+                      "Waterproof Headphones",
+                    ]}
+                  />
+                </div>
+                <div>
+                  <FooterTopitem
+                    Title={"Customer Care"}
+                    AllItem={[
+                      "My Account",
+                      "Discount",
+                      "Returns",
+                      "Order History",
+                      "Order Tracking",
+                    ]}
+                  />
+                </div>
+                <div>
+                  <FooterTopitem
+                    Title={"Pages"}
+                    AllItem={[
+                      "Blog",
+                      "Browse the Shop",
+                      "Category",
+                      "Pre-Built Pages",
+                      "Visual Composer Elements",
+                      "WooCommerce Pages",
+                    ]}
+                  />
+                </div>
+              </Flex>
+            </div>
           </Flex>
         </div>
       </div>

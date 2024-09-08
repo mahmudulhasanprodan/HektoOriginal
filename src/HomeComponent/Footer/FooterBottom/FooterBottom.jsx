@@ -12,7 +12,7 @@ const FooterBottom = () => {
       <div className="bg-FooterBtmColor">
         <div className="container">
           <Flex className={"items-center justify-around"}>
-            <div>
+            <div className="hidden md:block">
               <p className="font-Josefin text-OpacityColor text-base">
                 &copy;<span>Webecy - All Rights Reserved</span>
               </p>

@@ -24,7 +24,7 @@ const FeatureCard = ({title,CodeId,Image,Fprice}) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="relative w-[270px] h-[240px] bg-CardColor mt-12 shadow-md cursor-pointer rounded-t-lg flex items-center justify-center">
+        <div className="relative w-full md:w-[300px] h-[250px] bg-CardColor mt-12 shadow-md cursor-pointer rounded-t-lg flex items-center justify-center">
           <div>
             {hover && (
               <div className="absolute flex items-center gap-x-3 left-5 top-3 font-bold text-xl">
@@ -41,7 +41,7 @@ const FeatureCard = ({title,CodeId,Image,Fprice}) => {
         </div>
 
         <div
-          className={`group relative w-[270px] h-[120px] rounded-b-lg bg-CommonColor flex flex-col items-center justify-center cursor-pointer ${
+          className={`group relative w-[300px] h-[130px] rounded-b-lg bg-CommonColor flex flex-col items-center justify-center cursor-pointer ${
             hover && "bg-HoverColor"
           }`}
         >
