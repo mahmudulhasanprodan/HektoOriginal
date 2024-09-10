@@ -10,10 +10,10 @@ const Shopex = () => {
     <>
       <div>
         <div className="container">
-            <div className="mt-24 mb-14">
+            <div className="mt-24 mb-14 px-4 md:px-0">
                 <h2  className="font-Lato text-3xl text-FtextColor font-bold tracking-wider text-center">What Shopex Offer!</h2>
             </div>
-          <Flex className={"items-center py-10 justify-between cursor-pointer"}>
+          <Flex className={"items-center flex-col md:flex-row py-10 justify-between cursor-pointer"}>
             <div className="w-[300px] h-[340px] bg-CommonColor shadow-md flex flex-col items-center justify-center">
               <picture>
                 <img src={ShopImg} alt={ShopImg} className="w-16 h-16"/>

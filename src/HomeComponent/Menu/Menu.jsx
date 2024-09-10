@@ -9,15 +9,20 @@ import { FaBars } from "react-icons/fa6";
 const Menu = () => {
   return (
     <>
-      <div className="bg-HeaderTopColor md:bg-CommonColor fixed md:static w-full z-10 md:z-0">
+      <div className="bg-BannerBg shadow-md md:shadow-none md:bg-CommonColor fixed md:static w-full z-10 md:z-0">
         <div className="container">
           <Flex className={"items-center justify-between py-2 md:py-4 px-4 md:px-0"}>
             <div className="flex items-center gap-x-20">
               <div>
-                <h2 className="text-CommonColor font-bold font-Josefin text-3xl md:text-LogoColor cursor-pointer">
+                <h2 className="font-bold font-Josefin text-3xl text-LogoColor cursor-pointer">
                   Hekto
                 </h2>
               </div>
+              {/* <div className="cursor-pointer">
+                <span><FaBars /></span>
+              </div> */}
+
+             { /* Menu list here */}
               <div className="hidden md:block">
                 <div className="flex items-center gap-x-8">
                   <NavLink to={"/"} className={"text-base font-Lato"}>

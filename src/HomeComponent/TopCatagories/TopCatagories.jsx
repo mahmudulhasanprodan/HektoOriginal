@@ -14,7 +14,7 @@ const TopCatagories = ({title}) => {
                 {title ? title : "No Title"}
               </h2>
             </div>
-            <Flex className={"items-center justify-between mt-10"}>
+            <Flex className={"items-center flex-wrap md:flex-nowrap justify-center md:justify-between mt-10"}>
               {CatagriesData?.map((item) => (
                 <TopCatagoriesCard
                   title={item.title}
