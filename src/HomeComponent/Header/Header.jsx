@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <div className="bg-HeaderTopColor hidden md:block">
         <div className="container">
-          <Flex className={"items-center justify-between py-2 px-4 lg:px-0"}>
+          <Flex className={"items-center justify-between py-2 px-4 xl:px-0"}>
             <div className="flex items-center gap-x-20">
               <div className="hidden lg:block">
                 <div className="flex items-center text-CommonColor gap-x-3 cursor-pointer">

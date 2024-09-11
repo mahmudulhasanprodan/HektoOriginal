@@ -8,11 +8,11 @@ const OffProduct = () => {
     <>
       <div className="py-10">
         <div className="container">
-          <div className="flex justify-between flex-wrap md:flex-nowrap gap-y-4">
+          <div className="flex  justify-center xl:justify-between flex-wrap xl:flex-nowrap gap-y-4 lg:gap-x-5">
             {OffData?.map((item) => (
               <div key={item.id}>
                 <OffCard
-                  className={`w-[350px] md:w-[500px] h-72  ${
+                  className={`w-[350px] sm:w-[550px] lg:w-[400px] xl:w-[500px] h-72  ${
                     item.bacground === true ? "bg-[#FFF6FB]" : "bg-[#EEEFFB]"
                   }`}
                   title={item.title}
@@ -26,7 +26,7 @@ const OffProduct = () => {
 
             <div className="flex flex-col justify-between cursor-pointer">
               {offsideData?.map((item) => (
-                <div className="hidden md:block">
+                <div className="hidden xl:block">
                   <div className="flex items-center gap-x-5">
                     <div className="w-24 h-16 bg-[#F5F6F8] flex items-center justify-center p-4">
                       <picture>

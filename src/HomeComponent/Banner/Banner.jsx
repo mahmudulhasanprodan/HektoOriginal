@@ -8,7 +8,7 @@ const Banner = () => {
     <>
       <div className="bg-BannerBg">
         <div className="container">
-          <Flex className={"py-10 items-center justify-between px-4 lg:px-0"}>
+          <Flex className={"py-10 items-center justify-between px-4 xl:px-0"}>
             <div className="w-full lg:w-1/2 pt-14 md:pt-0">
               <h3 className="font-Lato text-xs md:text-base font-bold text-BtnColor">
                 Best Furniture For Your Castle....

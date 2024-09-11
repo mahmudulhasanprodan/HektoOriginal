@@ -11,7 +11,7 @@ const Menu = () => {
     <>
       <div className="bg-BannerBg shadow-md md:shadow-none md:bg-CommonColor fixed md:static w-full z-10 md:z-0">
         <div className="container">
-          <Flex className={"items-center justify-between py-2 md:py-4 px-4 lg:px-0"}>
+          <Flex className={"items-center justify-between py-2 md:py-4 px-4 xl:px-0"}>
             <div className="flex items-center gap-x-20">
               <div>
                 <h2 className="font-bold font-Josefin text-3xl text-LogoColor cursor-pointer">
@@ -53,7 +53,7 @@ const Menu = () => {
                   id="search"
                   name="search"
                   placeholder="You search here"
-                  className="w-[280px] border-2 border-BtnColor h-10 pl-3"
+                  className="w-[280px] lg:w-[250px] xl:w-[280px] border-2 border-BtnColor h-10 pl-3"
                 />
                 <Button
                   className={

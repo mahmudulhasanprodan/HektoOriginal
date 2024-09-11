@@ -5,7 +5,7 @@ import Flex from '../../../CommonComponent/Flex/Flex';
 const FooterTop = () => {
   return (
     <>
-      <div className="bg-FooterColor py-20">
+      <div className="bg-FooterColor py-20 px-4">
         <div className="container">
           <Flex className={"justify-between pr-16 px-4 md:px-0"}>
             <div className="flex flex-col gap-y-4">
@@ -13,15 +13,15 @@ const FooterTop = () => {
                 <h2 className="font-bold font-Josefin text-3xl text-LogoColor">
                   Hekto
                 </h2>
-                <div className="">
+                <div>
                   <input
                     type="text"
                     id="footersearch"
                     name="footersearch"
                     placeholder="Enter Email Address"
-                    className="w-48 md:w-56 pl-3 py-2"
+                    className="w-40 sm:w-48 md:w-56 pl-3 py-2"
                   />
-                  <button className="py-2 px-2 md:px-6 bg-BtnColor rounded-tr-md rounded-br-md text-CommonColor font-Josefin">
+                  <button className="py-2 px-2  md:px-6 bg-BtnColor rounded-tr-md rounded-br-md text-CommonColor font-Josefin">
                     Sign Up
                   </button>
                 </div>
@@ -37,7 +37,7 @@ const FooterTop = () => {
             </div>
             <div className="hidden md:block">
               <Flex className={"gap-x-20"}>
-                <div>
+                <div className="hidden lg:block">
                   <FooterTopitem
                     Title={"Catagories"}
                     AllItem={[
@@ -49,7 +49,7 @@ const FooterTop = () => {
                     ]}
                   />
                 </div>
-                <div>
+                <div className="hidden lg:block">
                   <FooterTopitem
                     Title={"Customer Care"}
                     AllItem={[
@@ -61,7 +61,7 @@ const FooterTop = () => {
                     ]}
                   />
                 </div>
-                <div>
+                <div className="hidden lg:block">
                   <FooterTopitem
                     Title={"Pages"}
                     AllItem={[

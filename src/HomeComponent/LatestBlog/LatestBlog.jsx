@@ -13,7 +13,7 @@ const LatestBlog = ({title}) => {
                 {title ? title : "No Title"}
               </h2>
             </div>
-            <div className="py-10 flex flex-col md:flex-row items-center gap-x-6 justify-center">
+            <div className="py-10 flex flex-col lg:flex-row items-center gap-x-6 justify-center">
               {LatestBlogData?.map((item) => (
                 <div>
                   <LatestBlogCard

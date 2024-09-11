@@ -38,8 +38,8 @@ const DiscountPart = ({title}) => {
               </div>
             </div>
           </div>
-          <Flex className={"items-center justify-between"}>
-            <div className="w-full px-4 md:px-0 md:w-1/2">
+          <Flex className={"items-center justify-between md:px-4 xl:px-0 md:mt-10"}>
+            <div className="w-full px-4 md:px-0 lg:w-1/2">
               <div>
                 <h2 className="font-Josefin font-bold text-xl md:text-3xl text-FtextColor text-center md:text-start">
                   20% Discount Of All Products
@@ -88,12 +88,12 @@ const DiscountPart = ({title}) => {
                 </button>
               </div>
             </div>
-            <div className="w-1/2 hidden md:block">
+            <div className="w-1/2 hidden lg:block">
               <div className="relative z-10">
                 <picture>
-                  <img src={DiscountImage} alt={DiscountImage} />
+                  <img src={DiscountImage} alt={DiscountImage}/>
                 </picture>
-                <div className="w-[450px] h-[450px] bg-[#FCECF1] rounded-full absolute top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 -z-10"></div>
+                <div className="w-[450px] h-[450px] lg:w-[350px] lg:h-[350px] xl:w-[450px] xl:h-[450px]  bg-[#FCECF1] rounded-full absolute top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 -z-10"></div>
               </div>
             </div>
           </Flex>

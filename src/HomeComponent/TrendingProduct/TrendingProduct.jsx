@@ -14,7 +14,7 @@ const TrendingProduct = ({title}) => {
                 {title ? title : "No Title"}
               </h2>
             </div>
-            <div className="flex items-center flex-wrap lg:flex-nowrap justify-center sm:gap-x-5 md:gap-x-0 lg:justify-between cursor-pointer">
+            <div className="flex items-center flex-wrap xl:flex-nowrap justify-center sm:gap-x-5 md:gap-x-0 lg:gap-x-6 xl:gap-x-0 xl:justify-between cursor-pointer">
               {TrendingData?.map((item) => (
                 <div>
                   <TrendingCard

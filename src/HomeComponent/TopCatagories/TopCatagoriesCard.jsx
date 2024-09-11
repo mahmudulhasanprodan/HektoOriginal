@@ -25,7 +25,7 @@ const TopCatagoriesCard = ({title, Price,Image}) => {
           <Flex className={"items-center justify-between"}>
             <div>
               <div
-                className="w-[270px] h-[270px] bg-CardColor rounded-full shadow-md cursor-pointer relative"
+                className="w-[270px] h-[270px] lg:w-[350px] lg:h-[350px] xl:w-[270px] xl:h-[270px] bg-CardColor rounded-full shadow-md cursor-pointer relative"
                 onMouseEnter={HandleMouseEnter}
                 onMouseLeave={HandleMouseLeave}
               >
@@ -49,7 +49,7 @@ const TopCatagoriesCard = ({title, Price,Image}) => {
                   <div
                     className={`${
                       Hover &&
-                      "w-[270px] h-[270px] bg-HeaderTopColor absolute top-2 -left-1  rounded-full"
+                      "w-[270px] h-[270px] lg:w-[350px] lg:h-[350px] xl:w-[270px] xl:h-[270px] bg-HeaderTopColor absolute top-2 -left-1  rounded-full"
                     }`}
                   ></div>
                 </div>

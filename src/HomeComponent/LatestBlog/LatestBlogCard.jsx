@@ -6,8 +6,8 @@ import { MdDateRange } from "react-icons/md";
 const LatestBlogCard = ({Title,Subtitle,Button,Image}) => {
   return (
     <>
-      <div className="w-full md:w-[370px] h-[490px] rounded-md shadow-md mt-10 px-4 md:px-0">
-        <div className="w-full h-[265px] flex items-center justify-center cursor-pointer">
+      <div className="w-full md:w-[550px] lg:w-[300px] xl:w-[370px] h-[490px] rounded-md shadow-md mt-10 px-4 lg:px-0">
+        <div className="w-full h-[265px] flex items-center md:justify-start lg:justify-center cursor-pointer">
           <picture>
             <img src={Image} alt={Image} className="rounded-md" />
           </picture>

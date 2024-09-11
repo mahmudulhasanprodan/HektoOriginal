@@ -15,10 +15,10 @@ const Updatebanner = () => {
             </div>
             <div className="container">
               <div className="flex flex-col items-center absolute top-2/4 -translate-y-1/2 left-2/4 -translate-x-1/2">
-                <h2 className="font-Josefin font-bold text-FtextColor md:text-3xl text-center">
+                <h2 className="font-Josefin font-bold text-FtextColor md:text-xl lg:text-3xl text-center">
                   Get Leatest Update By Subscribe <br /> 0ur Newslater
                 </h2>
-                <button className="py-2 px-8 bg-BtnColor text-CommonColor mt-6 rounded-sm">
+                <button className="lg:py-2 px-8 md:py-1 bg-BtnColor text-CommonColor mt-6 rounded-sm">
                   Shop Now
                 </button>
               </div>
