@@ -21,7 +21,7 @@ const HandleMouseleave = () => {
   return (
     <div>
       <div
-        className="w-[300px] md:w-[400px] h-[325px] shadow-md cursor-pointer"
+        className="w-[300px] sm:w-[550px] lg:w-[400px] h-[325px] shadow-md cursor-pointer"
         onMouseEnter={HandleMouseEnter}
         onMouseLeave={HandleMouseleave}
       >

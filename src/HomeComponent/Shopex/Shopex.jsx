@@ -13,8 +13,8 @@ const Shopex = () => {
             <div className="mt-24 mb-14 px-4 md:px-0">
                 <h2  className="font-Lato text-3xl text-FtextColor font-bold tracking-wider text-center">What Shopex Offer!</h2>
             </div>
-          <Flex className={"items-center flex-col md:flex-row py-10 justify-between cursor-pointer"}>
-            <div className="w-[300px] h-[340px] bg-CommonColor shadow-md flex flex-col items-center justify-center">
+          <Flex className={"items-center flex-col gap-y-4 lg:gap-y-0 lg:flex-row py-10 justify-between cursor-pointer"}>
+            <div className="w-[300px] sm:w-[550px] lg:w-[300px] h-[340px] bg-CommonColor shadow-md flex flex-col items-center justify-center">
               <picture>
                 <img src={ShopImg} alt={ShopImg} className="w-16 h-16"/>
               </picture>
@@ -26,7 +26,7 @@ const Shopex = () => {
                 purus gravida.
               </p>
             </div>
-            <div className="w-[300px] h-[340px] bg-CommonColor shadow-md flex flex-col items-center justify-center">
+            <div className="w-[300px] sm:w-[550px] lg:w-[300px] h-[340px] bg-CommonColor shadow-md flex flex-col items-center justify-center">
               <picture>
                 <img src={CashImg} alt={CashImg} className="w-16 h-16"/>
               </picture>
@@ -38,7 +38,7 @@ const Shopex = () => {
                 purus gravida.
               </p>
             </div>
-            <div className="w-[300px] h-[340px] bg-CommonColor shadow-md flex flex-col items-center justify-center">
+            <div className="w-[300px] sm:w-[550px] lg:w-[300px] h-[340px] bg-CommonColor shadow-md flex flex-col items-center justify-center">
               <picture>
                 <img src={premiumtImg} alt={premiumtImg} className="w-16 h-16"/>
               </picture>
@@ -50,7 +50,7 @@ const Shopex = () => {
                 purus gravida.
               </p>
             </div>
-            <div className="w-[300px] h-[340px] bg-CommonColor shadow-md flex flex-col items-center justify-center">
+            <div className="w-[300px] sm:w-[550px] lg:w-[300px] h-[340px] bg-CommonColor shadow-md flex flex-col items-center justify-center">
               <picture>
                 <img src={SupportImg} alt={SupportImg} className="w-16 h-16"/>
               </picture>

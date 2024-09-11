@@ -45,7 +45,7 @@ const LatestProduct = ({title}) => {
               </div>
             </div>
           </div>
-          <div className="py-10 flex items-center justify-center md:justify-between flex-wrap gap-y-24 px-4 md:px-0">
+          <div className="py-10 flex items-center justify-center lg:justify-between md:gap-x-6 flex-wrap gap-y-24 px-4 md:px-0">
             {LatestData?.map((item) => (
               <LastestCard
                 title={item.title}

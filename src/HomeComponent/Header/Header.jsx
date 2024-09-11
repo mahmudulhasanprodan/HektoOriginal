@@ -14,9 +14,9 @@ const Header = () => {
     <>
       <div className="bg-HeaderTopColor hidden md:block">
         <div className="container">
-          <Flex className={"items-center justify-between py-2 px-4 md:px-0"}>
+          <Flex className={"items-center justify-between py-2 px-4 lg:px-0"}>
             <div className="flex items-center gap-x-20">
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
                 <div className="flex items-center text-CommonColor gap-x-3 cursor-pointer">
                   <span className="font-bold">
                     <GrMailOption className="w-[16px] h-[16px]" />
@@ -47,7 +47,7 @@ const Header = () => {
                   </span>
                 </div>
               </div>
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
                 <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
                   <p className="text-CommonColor font-Josefin text-sm font-semibold">
                     USD
@@ -67,7 +67,7 @@ const Header = () => {
                   </span>
                 </div>
               </div>
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
                 <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
                   <p className="text-CommonColor font-Josefin text-sm font-semibold">
                     Wishlist
@@ -77,7 +77,7 @@ const Header = () => {
                   </span>
                 </div>
               </div>
-              <div className="text-CommonColor cursor-pointer hidden md:block">
+              <div className="text-CommonColor cursor-pointer hidden lg:block">
                 <span className="font-bold">
                   <FaCartPlus />
                 </span>

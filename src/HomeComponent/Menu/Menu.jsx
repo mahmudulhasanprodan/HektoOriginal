@@ -11,7 +11,7 @@ const Menu = () => {
     <>
       <div className="bg-BannerBg shadow-md md:shadow-none md:bg-CommonColor fixed md:static w-full z-10 md:z-0">
         <div className="container">
-          <Flex className={"items-center justify-between py-2 md:py-4 px-4 md:px-0"}>
+          <Flex className={"items-center justify-between py-2 md:py-4 px-4 lg:px-0"}>
             <div className="flex items-center gap-x-20">
               <div>
                 <h2 className="font-bold font-Josefin text-3xl text-LogoColor cursor-pointer">
@@ -46,7 +46,7 @@ const Menu = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <div className="flex items-center">
                 <input
                   type="text"
