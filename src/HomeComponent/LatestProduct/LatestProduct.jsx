@@ -6,6 +6,7 @@ import { LatestData } from '../../../JsonData/JsonData';
 
 
 const LatestProduct = ({title}) => {
+
   return (
     <>
       <div>
