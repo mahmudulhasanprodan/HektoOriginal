@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TrendingCard from './TrendingCard';
-import { TrendingData } from '../../../JsonData/JsonData';
+import { useSelector, useDispatch } from 'react-redux'
 
 
 const TrendingProduct = ({title}) => {
+
+  const[TrendingData,setTrendingData]=useState([]);
+
+  const {value,status}= useSelector((state) => state.Product);
+
+
+  useEffect(() => {
+      if (status.payload === "IDLE") {
+        setTrendingData(value.payload.products)
+      }
+  },[status.payload,value.payload])
+
   return (
     <>
       <div>
@@ -15,11 +27,11 @@ const TrendingProduct = ({title}) => {
               </h2>
             </div>
             <div className="flex items-center flex-wrap xl:flex-nowrap justify-center sm:gap-x-5 md:gap-x-0 lg:gap-x-6 xl:gap-x-0 xl:justify-between cursor-pointer">
-              {TrendingData?.map((item) => (
+              {TrendingData?.slice(12,16).map((item) => (
                 <div>
                   <TrendingCard
                     title={item.title}
-                    Image={item.img}
+                    Image={item.thumbnail}
                     Price={`$${
                       item.price - (item.price * item.discount) / 100
                     }`}

@@ -1,6 +1,4 @@
 import React from 'react'
-import Header from '../../HomeComponent/Header/Header'
-import Menu from '../../HomeComponent/Menu/Menu'
 import Banner from '../../HomeComponent/Banner/Banner'
 import FeatureProduct from '../../HomeComponent/FeatureProduct/FeatureProduct'
 import LatestProduct from '../../HomeComponent/LatestProduct/LatestProduct'
@@ -12,14 +10,11 @@ import DiscountPart from '../../HomeComponent/DiscoutPart/DiscountPart'
 import TopCatagories from '../../HomeComponent/TopCatagories/TopCatagories'
 import Updatebanner from '../../HomeComponent/UpdateBanner/Updatebanner'
 import LatestBlog from '../../HomeComponent/LatestBlog/LatestBlog'
-import FooterTop from '../../HomeComponent/Footer/FooterTop/FooterTop'
-import FooterBottom from '../../HomeComponent/Footer/FooterBottom/FooterBottom'
+
 
 const Home = () => {
   return (
     <>
-      <Header />
-      <Menu />
       <Banner />
       <FeatureProduct title={"Featured Products"}/>
       <LatestProduct title={"Leatest Products"}/>
@@ -31,8 +26,6 @@ const Home = () => {
       <TopCatagories title={"Top Catagories"}/>
       <Updatebanner />
       <LatestBlog  title={"Leatest Blog"}/> 
-      <FooterTop />
-      <FooterBottom />
     </>
   )
 }

@@ -37,7 +37,7 @@ const Menu = () => {
                   <NavLink to={"/"} className={"text-base font-Lato"}>
                     Blog
                   </NavLink>
-                  <NavLink to={"/"} className={"text-base font-Lato"}>
+                  <NavLink to={"/shop"} className={"text-base font-Lato active:underline focus:text-red-400"}>
                     Shop
                   </NavLink>
                   <NavLink to={"/"} className={"text-base font-Lato"}>

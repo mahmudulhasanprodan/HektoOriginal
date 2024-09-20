@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import LastestCard from './LastestCard'
 import { Link } from 'react-router-dom';
-import { LatestData } from '../../../JsonData/JsonData';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 
 const LatestProduct = ({title}) => {
+
+  const[LatestData,setLatestData]=useState([]);
+
+  const {value,status}=useSelector((state) => state.Product);
+
+  console.log(value.payload);
+
+
+  useEffect(() => {
+      if (status.payload === "IDLE") {
+        setLatestData(value.payload.products)
+      }
+  },[status.payload,value.payload])
+
+
 
   return (
     <>
@@ -47,7 +62,7 @@ const LatestProduct = ({title}) => {
             </div>
           </div>
           <div className="py-10 flex items-center justify-center lg:gap-x-10 xl:justify-between md:gap-x-6 flex-wrap gap-y-24 px-4 md:px-0">
-            {LatestData?.map((item) => (
+            {LatestData?.slice(6,12).map((item) => (
               <LastestCard
                 title={item.title}
                 Price={item.Mprise - (item.Mprise * item.discountPrice) / 100}
@@ -55,7 +70,7 @@ const LatestProduct = ({title}) => {
                 DiscoutPrice={
                   item.baze === true ? `-${item.discountPrice}%` : item.Product
                 }
-                Image={item.img}
+                Image={item.thumbnail}
               />
             ))}
           </div>

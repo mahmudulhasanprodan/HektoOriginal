@@ -1,125 +1,10 @@
 
-//Features Image here
-import ImgOne from "../src/assets/HomeComponentImages/image1.png"
-import ImgTwo from "../src/assets/HomeComponentImages/image1169.png"
-import ImgThree from "../src/assets/HomeComponentImages/image3.png"
-import ImgFour from "../src/assets/HomeComponentImages/image1168.png"
-
-
-export const FeatureData = [
-  {
-    id: 1,
-    img: ImgOne,
-    title: "Cantilever Chair",
-    code: "Code - Y523201",
-    Price: "$42.00",
-  },
-  {
-    id: 2,
-    img: ImgTwo,
-    title: "Cantilever Chair",
-    code: "Code - Y523201",
-    Price: "$44.00",
-  },
-  {
-    id: 3,
-    img: ImgThree,
-    title: "Cantilever Chair",
-    code: "Code - Y523201",
-    Price: "$35.00",
-  },
-  {
-    id: 4,
-    img: ImgFour,
-    title: "Cantilever Chair",
-    code: "Code - Y523201",
-    Price: "$42.00",
-  },
-];
 
 
 
-// Latest Products Image Here 
-import ImageOne from "../src/assets/HomeComponentImages/Latest1.png"
-import ImageTwo from "../src/assets/HomeComponentImages/Latest2.png"
-import ImageThree from "../src/assets/HomeComponentImages/Latest3.png"
-import ImageFour from "../src/assets/HomeComponentImages/Latest4.png"
-import ImageFive from "../src/assets/HomeComponentImages/image3.png"
-import Imagesix from "../src/assets/HomeComponentImages/image23.png"
-
-
-export const LatestData = [
-  {
-    id: 1,
-    img: ImageOne,
-    baze: true,
-    title: "Comfort Handy Craft",
-    Mprise: 65.00,
-    discountPrice: 15.00,
-    Product: "sale",
-  },
-  {
-    id: 2,
-    img: ImageTwo,
-    baze: false,
-    title: "Comfort Handy Craft",
-    Mprise: 45,
-    discountPrice: 10,
-    Product: "sale",
-  },
-  {
-    id: 3,
-    img: ImageThree,
-    baze: true,
-    title: "Comfort Handy Craft",
-    Mprise: 105.00,
-    discountPrice: 8.00,
-    Product: "sale",
-  },
-  {
-    id: 4,
-    img: ImageFive,
-    baze: true,
-    title: "Comfort Handy Craft",
-    Mprise: 105.00,
-    discountPrice: 8.00,
-    Product: "sale",
-  },
-  {
-    id: 5,
-    img: ImageFour,
-    baze: true,
-    title: "Comfort Handy Craft",
-    Mprise: 105.00,
-    discountPrice: 8.00,
-    Product: "sale",
-  },
-  {
-    id: 6,
-    img: Imagesix,
-    baze: true,
-    title: "Comfort Handy Craft",
-    Mprise: 105.00,
-    discountPrice: 8.00,
-    Product: "sale",
-  },
-];
 
 
 
-// Trending Product Image Here
-import TrendImg1 from "../src/assets/HomeComponentImages/TrendingOne.png"
-import TrendImg2 from "../src/assets/HomeComponentImages/TrendingTwo.png"
-import TrendImg3 from "../src/assets/HomeComponentImages/TrendingThree.png"
-import TrendImg4 from "../src/assets/HomeComponentImages/TrendingFour.png"
-
-
-export const TrendingData = [
-  { id: 1, img: TrendImg1, title: "Cantilever chair", price: 50, discount: 15 },
-  { id: 2, img: TrendImg2, title: "Cantilever chair", price: 60, discount: 12 },
-  { id: 3, img: TrendImg3, title: "Cantilever chair", price: 80, discount: 10 },
-  { id: 4, img: TrendImg4, title: "Cantilever chair", price: 70, discount: 20 },
-];
 
 // Off Product Image Here
 
@@ -219,4 +104,63 @@ export const LatestBlogData = [
     Details:
       "More off this less hello samlande lied muchover tightly circa horse taped mightly...",
   },
+];
+
+
+export const DropDownData = [
+  { id: 1, Product: "Coaster Furniture" },
+  { id: 2, Product: "Fusion Dot High Fashion" },
+  { id: 3, Product: "Unique Furnitture Restor" },
+  { id: 4, Product: "Dream Furnitture Flipping" },
+  { id: 5, Product: "Green DIY furniture" },
+];
+
+
+export const ShowPageData = [
+  { id: 1, Product: 10},
+  { id: 2, Product: 20},
+  { id: 3, Product: 12 },
+  { id: 4, Product: 30 },
+  { id: 5, Product: 40 },
+];
+
+
+export const BrandNameData = [
+  { id: 1, title: "Fusion Dot High Fashion" },
+  { id: 2, title: "Unique Furnitture Restor" },
+  { id: 3, title: "Fusion Dot High Fashion" },
+  { id: 4, title: "Dream Furnitture Flipping" },
+  { id: 5, title: "Young Repurposed" },
+  { id: 6, title: "Green DIY furniture" },
+];
+
+
+export const BrandPriceData = [
+  { id: 1, title: "$0.00 - $9.99" },
+  { id: 2, title: "$10.00 - $19.99" },
+  { id: 3, title: "$20.00 - $29.99" },
+  { id: 4, title: "$30.00 - $39.99" },
+  { id: 5, title: "$40.00 - $69.99" },
+];
+
+export const BrandColorData = [
+  { id: 1, Color: "#5E37FF", title:"Blue" },
+  { id: 2, Color: "#FF9437", title:"Orrange" },
+  { id: 3, Color: "#FFBF95", title:"Brown" },
+  { id: 4, Color: "#33D221", title:"green" },
+  { id: 5, Color: "#E248FF", title:"Purple" },
+  { id: 6, Color: "#26CBFF", title:"Sky" },
+ 
+];
+
+import { FaStar } from "react-icons/fa";
+
+export const BrandCategoriesData = [
+  { id: 1, title: "Magento" },
+  { id: 2, title:"Prestashop" },
+  { id: 3, title:"Bigcommerce" },
+  { id: 4, title:"Accessories" },
+  { id: 5, title:"Bags" },
+  { id: 6, title:"3dcart" },
+ 
 ];
