@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import LastestCard from './LastestCard'
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import Loading from '../../CommonComponent/Loading/Loading';
 
 
 
@@ -61,6 +62,16 @@ const LatestProduct = ({title}) => {
               </div>
             </div>
           </div>
+          {/* loading State  */}
+          <div className="flex items-center gap-x-4">
+              {status.payload === "LOADING" && (
+                <Loading
+                  className={
+                    "w-full md:w-[300px] lg:w-[400px] xl:w-[300px] h-[380px] rounded-md mt-12"
+                  }
+                />
+              )}
+            </div>
           <div className="py-10 flex items-center justify-center lg:gap-x-10 xl:justify-between md:gap-x-6 flex-wrap gap-y-24 px-4 md:px-0">
             {LatestData?.slice(6,12).map((item) => (
               <LastestCard

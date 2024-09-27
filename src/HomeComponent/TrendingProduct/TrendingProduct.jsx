@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import TrendingCard from './TrendingCard';
 import { useSelector, useDispatch } from 'react-redux'
-
+import Loading from '../../CommonComponent/Loading/Loading';
 
 const TrendingProduct = ({title}) => {
 
@@ -25,6 +25,16 @@ const TrendingProduct = ({title}) => {
               <h2 className="font-Lato text-3xl text-FtextColor font-bold tracking-wider text-center">
                 {title ? title : "No Title"}
               </h2>
+            </div>
+            {/* Loading State  */}
+            <div className="flex items-center gap-x-4">
+              {status.payload === "LOADING" && (
+                <Loading
+                  className={
+                    "w-full md:w-[300px] lg:w-[400px] xl:w-[300px] h-[380px] rounded-md mt-12"
+                  }
+                />
+              )}
             </div>
             <div className="flex items-center flex-wrap xl:flex-nowrap justify-center sm:gap-x-5 md:gap-x-0 lg:gap-x-6 xl:gap-x-0 xl:justify-between cursor-pointer">
               {TrendingData?.slice(12,16).map((item) => (

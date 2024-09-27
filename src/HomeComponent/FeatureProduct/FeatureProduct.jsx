@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import FeatureCategori from './FeatureCard'
 import { FeatureProductData } from '../../../Redux/Counter/Counter.slice';
 import { useSelector, useDispatch } from 'react-redux'
-import axios from 'axios';
+import Loading from '../../CommonComponent/Loading/Loading';
 
 
 
@@ -39,8 +39,17 @@ useEffect(() => {
                 {title ? title : "Title Missing"}
               </h2>
             </div>
+            <div className="flex items-center gap-x-4">
+              {status.payload === "LOADING" && (
+                <Loading
+                  className={
+                    "w-full md:w-[300px] lg:w-[400px] xl:w-[300px] h-[380px] rounded-md mt-12"
+                  }
+                />
+              )}
+            </div>
             <div className="flex flex-wrap xl:flex-nowrap lg:gap-x-10 xl:gap-x-0 items-center justify-center gap-x-4 xl:justify-between px-4 sm:px-0 lg:px-4 xl:px-0">
-              {allProducts?.slice(0,4).map((item) => (
+              {allProducts?.slice(0, 4).map((item) => (
                 <div key={item.id}>
                   <FeatureCategori
                     title={item.title}

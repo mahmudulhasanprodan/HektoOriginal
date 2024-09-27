@@ -22,7 +22,7 @@ const CatagoriesData = ({AllData=[one,Two,Three],subTitle,ColorItem,Rating}) => 
     <>
       <div>
         <div
-          className="bg-gray-300 py-1 cursor-pointer mt-2 flex items-center justify-between pr-4"
+          className="bg-gray-300 py-1 cursor-pointer flex items-center justify-between pr-4 border-l-gray-400"
           onClick={HandleBrandShow}
         >
           <h2 className="pl-4 font-Josefin font-bold text-base text-FtextColor">
