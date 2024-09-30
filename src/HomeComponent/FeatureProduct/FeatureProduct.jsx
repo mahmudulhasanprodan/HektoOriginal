@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import FeatureCategori from './FeatureCard'
-import { FeatureProductData } from '../../../Redux/Counter/Counter.slice';
 import { useSelector, useDispatch } from 'react-redux'
 import Loading from '../../CommonComponent/Loading/Loading';
+import { FeatureProductData } from '../../../Redux/Counter/Counter.slice';
 
 
 
@@ -13,21 +13,19 @@ const FeatureProduct = ({title}) => {
   const[allProducts,setallProducts]=useState([]);
 
 
-useEffect(() => {
-    dispatch(FeatureProductData());
-},[])
+
+   const{value,status}=useSelector((state) => state.Product)
 
 
-const {value,status}= useSelector((state) => state.Product);
+   useEffect(() => {
+       if(status.payload === "IDLE"){
+        setallProducts(value.payload.products)
+       }
+   },[status.payload,value.payload])
 
 
-useEffect(() => {
-    if (status.payload === "IDLE") {
-      setallProducts(value.payload.products)
-    }
-},[status.payload,value.payload])
 
-
+ 
 
   return (
     <>

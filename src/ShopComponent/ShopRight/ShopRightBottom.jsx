@@ -9,8 +9,8 @@ import { CiZoomIn } from "react-icons/ci";
 const ShopRightBottom = ({shopImage,title}) => {
   return (
     <>
-      <div className="mt-6 px-4">
-        <div className="w-full  bg-CommonColor drop-shadow-CardShadow">
+      <div className="mt-6 px-6">
+        <div className="w-[990px] bg-CommonColor drop-shadow-CardShadow">
           <Flex className={"items-center"}>
             <div className="flex h-full w-1/3 item-center p-4 cursor-pointer">
               <img src={shopImage} alt={shopImage} className="h-[230px]"/>

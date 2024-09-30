@@ -21,7 +21,7 @@ const BreadCrumb = () => {
           {BreadCrumbPathName?.map((path,index)=> {
             const Islast = index === BreadCrumbPathName.length -1 
             Breadcrumb += path;
-            console.log(Breadcrumb);
+            
                     
             return (
               <li key={path}>

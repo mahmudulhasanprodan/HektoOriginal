@@ -40,7 +40,7 @@ const Menu = () => {
                   <NavLink to={"/shop"} className={"text-base font-Lato active:underline focus:text-red-400"}>
                     Shop
                   </NavLink>
-                  <NavLink to={"/"} className={"text-base font-Lato"}>
+                  <NavLink to={"/contact"} className={"text-base font-Lato focus:text-red-400"}>
                     Contact
                   </NavLink>
                 </div>

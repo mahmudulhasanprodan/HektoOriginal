@@ -7,12 +7,11 @@ import Loading from '../../CommonComponent/Loading/Loading';
 
 
 const LatestProduct = ({title}) => {
+  const dispatch = useDispatch();
 
   const[LatestData,setLatestData]=useState([]);
 
   const {value,status}=useSelector((state) => state.Product);
-
-  console.log(value.payload);
 
 
   useEffect(() => {

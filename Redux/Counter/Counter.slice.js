@@ -29,18 +29,20 @@ export const ProductSlice= createSlice({
 
 // Thunk function here 
 
-export const FeatureProductData = () => {
-    return async function GetProduct(dispatch,getState) {
-       try {
-        dispatch(SetStatus(ApiStatus.LOADING));
-        const response = await axios.get("https://dummyjson.com/products");
-         dispatch(SetProduct(response.data));
-         dispatch(SetStatus(ApiStatus.IDLE));
-       } catch (error) {
-        console.log(error);
-        dispatch(SetStatus(ApiStatus.ERROR));
-       }
-    } 
+export const FeatureProductData = (ApiUrl) => {
+  return async function GetProduct(dispatch, getState) {
+    try {
+      dispatch(SetStatus(ApiStatus.LOADING));
+      const response = await axios.get(ApiUrl);
+      console.log(response);
+      
+      dispatch(SetProduct(response.data));
+      dispatch(SetStatus(ApiStatus.IDLE));
+    } catch (error) {
+      console.log(error);
+      dispatch(SetStatus(ApiStatus.ERROR));
+    }
+  };
 };
 
 // Action creators are generated for each case reducer function

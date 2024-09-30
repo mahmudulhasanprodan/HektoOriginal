@@ -8,7 +8,7 @@ const Shop = () => {
   return (
     <>
       <div>
-        <ShopTitle />
+        <ShopTitle Title={"Shop"}/>
       </div>
       <div className="container">
         <div className="flex">
