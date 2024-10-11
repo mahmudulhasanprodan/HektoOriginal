@@ -7,23 +7,20 @@ import { FeatureProductData } from '../../../Redux/Counter/Counter.slice';
 
 
 
-const FeatureProduct = ({title}) => {
-  const dispatch = useDispatch();
+const FeatureProduct = ({title,Pdata}) => {
 
-  const[allProducts,setallProducts]=useState([]);
+const dispatch = useDispatch();
 
-
-
-   const{value,status}=useSelector((state) => state.Product)
+const[allProducts,setallProducts]=useState(Pdata)
 
 
-   useEffect(() => {
-       if(status.payload === "IDLE"){
-        setallProducts(value.payload.products)
-       }
-   },[status.payload,value.payload])
+const{status,value}= useSelector((state) => state.Product);
 
-
+useEffect(() => {
+  if(status.payload === "IDLE"){
+    setallProducts(Pdata);
+  }
+},[status.payload,value.payload])
 
  
 

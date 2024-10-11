@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const FooterTopitem = ({AllItem=["One","Two","Three"],Title}) => {
-console.log(AllItem);
+
 
     
   return (

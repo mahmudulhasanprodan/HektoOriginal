@@ -20,7 +20,7 @@ const ShopRight = ({className}) => {
   const { value, status } = useSelector((state) => state.Product);
 
   useEffect(() => {
-    if (status.payload === "IDLE" && value.payload.products.length > 0) {
+    if (status.payload === "IDLE") {
       setshopData(value.payload.products);
     }
   }, [status.payload, value.payload]);
@@ -43,20 +43,23 @@ const ShopRight = ({className}) => {
         </div>
         <div>
           <div className="px-4">
-            {status.payload === "LOADING" && (
+            {status.payload === "LOADING" ? (
               <Loading className={"w-full h-[230px] rounded-md px-4 mt-4"} />
+            ) : status.payload === "ERROR" ? (
+              <h2>Error</h2>
+            ) : (
+              shopData?.slice(Page * 9 - 9, Page * 9).map((item) => (
+                <div key={item.id}>
+                  <Link to={`/product-details/${item.id}`}>
+                    <ShopRightBottom
+                      shopImage={item.thumbnail}
+                      title={item.title}
+                    />
+                  </Link>
+                </div>
+              ))
             )}
           </div>
-          {shopData?.slice(Page * 9 + 1 - 9, Page * 9).map((item) => (
-            <div key={item.id}>
-              <Link to={`/product-details/${item.id}`}>
-                <ShopRightBottom
-                  shopImage={item.thumbnail}
-                  title={item.title}
-                />
-              </Link>
-            </div>
-          ))}
         </div>
         <div className="py-10 px-4 flex items-center gap-x-3">
           <p
