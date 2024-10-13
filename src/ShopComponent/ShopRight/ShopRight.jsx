@@ -7,6 +7,7 @@ import Loading from '../../CommonComponent/Loading/Loading'
 import { MdOutlineKeyboardDoubleArrowRight,MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import { Link } from 'react-router-dom'
 
+
 const ShopRight = ({className}) => {
   const dispatch = useDispatch();
   const [shopData, setshopData] = useState([]);

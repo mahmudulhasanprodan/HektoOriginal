@@ -6,12 +6,14 @@ import { useParams } from 'react-router-dom'
 import ProductDetailsRight from './ProductDetailsRight'
 import ProductImage from './ProductImage'
 import Descripstion from './Descripstion'
+import { CartItem } from '../../../Redux/AddtoCart/AddtoCartSlice'
+import { useNavigate } from 'react-router-dom'
 
 
 const ProductDetails = () => {
 const dispatch = useDispatch();
 const {productId} = useParams();
-
+const naviGate = useNavigate();
 
 
 const[DetailsData,setDetailsData] = useState([]);
@@ -30,9 +32,14 @@ useEffect(() => {
       }
 },[status.payload,value.payload])
 
-//slider Here
+// HandleCart function start here
 
-console.log(DetailsData);
+const HandleCart = () => {
+   dispatch(CartItem(DetailsData))
+   naviGate("/cart");
+};
+
+
 
   return (
     <>
@@ -61,6 +68,7 @@ console.log(DetailsData);
                 Brand={DetailsData.brand}
                 Tag={DetailsData.tags}
                 Warrenty={DetailsData.warrantyInformation}
+                OnADDCart={HandleCart}
               />
             </div>
           </div>

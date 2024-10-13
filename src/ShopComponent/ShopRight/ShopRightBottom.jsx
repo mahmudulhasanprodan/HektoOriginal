@@ -46,7 +46,7 @@ const ShopRightBottom = ({shopImage,title}) => {
               <div className="flex items-center gap-x-10 font-bold mt-3 cursor-pointer text-FtextColor">
                 <LuShoppingCart />
                 <FaRegHeart />
-                <CiZoomIn className=""/>
+                <CiZoomIn/>
               </div>
             </div>
           </Flex>

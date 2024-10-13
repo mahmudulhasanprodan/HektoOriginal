@@ -3,7 +3,7 @@ import { FaRegStar } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 
 
-const ProductDetailsRight = ({title,Rating,Price,Mprice,Categories,Brand,Tag,Warrenty,Description}) => {
+const ProductDetailsRight = ({title,Rating,Price,Mprice,Categories,Brand,Tag,Warrenty,Description,OnADDCart}) => {
   return (
     <div className="flex flex-col gap-y-3">
       <h2 className="font-Josefin font-bold text-2xl text-FtextColor">
@@ -53,7 +53,7 @@ const ProductDetailsRight = ({title,Rating,Price,Mprice,Categories,Brand,Tag,War
         </p>
       </div>
       <div className="flex items-center gap-x-6 cursor-pointer">
-        <button className="px-8 py-1 bg-BtnColor rounded-sm text-CommonColor">
+        <button className="px-8 py-1 bg-BtnColor rounded-sm text-CommonColor active:bg-green-400" onClick={OnADDCart}>
           Add to Cart
         </button>
         <span>

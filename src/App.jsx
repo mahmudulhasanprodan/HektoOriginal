@@ -6,6 +6,9 @@ import ProductDetails from './ShopComponent/ProductDetails/ProductDetails';
 import Account from './Pages/Account/Account';
 import Contact from './Pages/Contact/Contact';
 import Error from './Pages/Error/Error';
+import Cart from './Pages/Cart/Cart';
+import { ToastContainer } from 'react-toastify';
+
 
 import {
   createBrowserRouter,
@@ -14,23 +17,32 @@ import {
   Route,
 } from "react-router-dom";
 
-const router=createBrowserRouter(
+const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootElement />}>
       <Route index element={<Home />}></Route>
       <Route path="/shop" element={<Shop />}></Route>
-      <Route path="/product-details/:productId" element={<ProductDetails />}></Route>
+      <Route
+        path="/product-details/:productId"
+        element={<ProductDetails />}
+      ></Route>
       <Route path="/account" element={<Account />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
       <Route path="/error" element={<Error />}></Route>
+      <Route path="/cart" element={<Cart />}></Route>
     </Route>
   )
-)
+);
 
 const App = () => {
+
+
+
+  
   return (
     <>
-      <RouterProvider router={router}/>
+      <ToastContainer />
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }
