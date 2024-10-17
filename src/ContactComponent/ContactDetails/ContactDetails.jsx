@@ -13,8 +13,8 @@ const ContactDetails = () => {
           <div>
             <ContactInfo />
           </div>
-          <Flex className={"mt-10 item-center mb-48 gap-x-6"}>
-            <div className="w-1/2">
+          <Flex className={"mt-10 item-center mb-48 gap-x-6 px-4 xl:px-0"}>
+            <div className="w-full xl:w-1/2">
               <div>
                 <h2 className="font-Josefin font-bold text-2xl text-FtextColor">
                   Get In Touch
@@ -27,7 +27,7 @@ const ContactDetails = () => {
                 </p>
               </div>
               <div className="mt-10 flex flex-col gap-y-10">
-                <Flex className="flex items-center gap-x-3">
+                <Flex className="flex flex-col md:flex-row items-center gap-y-10 md:gap-x-3">
                   <input
                     type="text"
                     id="Name"
@@ -59,13 +59,13 @@ const ContactDetails = () => {
                   ></textarea>
                 </Flex>
               </div>
-              <div className="mt-6">
+              <div className="mt-10 md:mt-6">
                 <button className="flex items-center gap-x-2 px-12 py-2 bg-BtnColor text-CommonColor font-Lato font-bold text-base rounded-md">
                   Send Mail <IoIosSend />
                 </button>
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="w-1/2 hidden xl:block">
               <picture>
                 <img
                   src={ContactVector}
