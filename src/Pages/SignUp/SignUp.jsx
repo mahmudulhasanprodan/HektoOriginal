@@ -278,12 +278,12 @@ const SignUp = () => {
         </div>
         <div className="container">
           <div className="py-20">
-            <h2 className="font-Josefin font-bold text-2xl text-FtextColor">
+            <h2 className="font-Josefin font-bold text-2xl text-FtextColor px-4 xl:px-4">
               Your Personal Details
             </h2>
           </div>
           <div className="flex flex-wrap gap-x-10 gap-y-10 border-2 p-6 bg-gray-200">
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <Resistration
                 className={`${
                   userInfoError.FirstNameError
@@ -304,7 +304,7 @@ const SignUp = () => {
                 </p>
               )}
             </div>
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <Resistration
                 className={
                   "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent"
@@ -318,7 +318,7 @@ const SignUp = () => {
                 OnValue={userInfo.LastName}
               />
             </div>
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <Resistration
                 className={`${
                   userInfoError.EmailAddressError
@@ -339,7 +339,7 @@ const SignUp = () => {
                 </p>
               )}
             </div>
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <Resistration
                 className={`${
                   userInfoError.NumberError
@@ -360,7 +360,7 @@ const SignUp = () => {
                 </p>
               )}
             </div>
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <Resistration
                 className={`${
                   userInfoError.AdrressOneError
@@ -381,7 +381,7 @@ const SignUp = () => {
                 </p>
               )}
             </div>
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <Resistration
                 className={
                   "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent"
@@ -395,7 +395,7 @@ const SignUp = () => {
                 OnValue={userInfo.AdressTwo}
               />
             </div>
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <Resistration
                 className={
                   "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent"
@@ -409,7 +409,7 @@ const SignUp = () => {
                 OnValue={userInfo.City}
               />
             </div>
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <Resistration
                 className={
                   "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent"
@@ -426,7 +426,7 @@ const SignUp = () => {
           </div>
           {/* Division Part is here */}
           <div className="flex gap-x-10 gap-y-6 bg-gray-200 p-6">
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <h2 className="font-Josefin text-base font-bold text-FtextColor py-2">
                 Division
               </h2>
@@ -435,8 +435,8 @@ const SignUp = () => {
                 id="Division"
                 className={`${
                   userInfoError.DistrictError
-                    ? "border-b-[1px] border-b-red-500 py-2 bg-transparent"
-                    : "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent"
+                    ? "border-b-[1px] border-b-red-500 py-2 bg-transparent w-full md:basis-2/5"
+                    : "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent w-full md:basis-2/5"
                 }`}
                 onChange={HandleInput}
                 value={userInfo.Division}
@@ -457,7 +457,7 @@ const SignUp = () => {
                 </p>
               )}
             </div>
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <h2 className="font-Josefin text-base font-bold text-FtextColor py-2">
                 District
               </h2>
@@ -466,8 +466,8 @@ const SignUp = () => {
                 id="District"
                 className={`${
                   userInfoError.DistrictError
-                    ? "border-b-[1px] border-b-red-500 py-2 bg-transparent"
-                    : "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent"
+                    ? "border-b-[1px] border-b-red-500 py-2 bg-transparent w-full md:basis-2/5"
+                    : "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent cursor-pointer w-full md:basis-2/5"
                 }`}
                 onChange={HandleInput}
                 value={userInfo.District}
@@ -488,12 +488,12 @@ const SignUp = () => {
           </div>
           {/* password part Here */}
           <div className="flex flex-wrap p-6 bg-gray-200 gap-x-10 gap-y-6">
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <Resistration
                 className={`${
                   userInfoError.PasswordError
                     ? "border-b-[1px] border-b-red-500 py-2 bg-transparent"
-                    : "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent"
+                    : "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent cursor-pointer"
                 }`}
                 labelItem={"Password*"}
                 InputType={"password"}
@@ -508,7 +508,7 @@ const SignUp = () => {
                   {userInfoError.PasswordError}
                 </p>
               )}
-              <div className="basis-2/5">
+              <div className="w-full md:basis-2/5">
                 {userInfoError.PasswordNotMatchError && (
                   <p className="text-red-500 font-Josefin">
                     {userInfoError.PasswordNotMatchError}
@@ -516,12 +516,12 @@ const SignUp = () => {
                 )}
               </div>
             </div>
-            <div className="basis-2/5">
+            <div className="w-full md:basis-2/5">
               <Resistration
                 className={`${
                   userInfoError.RepeatPasswordError
                     ? "border-b-[1px] border-b-red-500 py-2 bg-transparent"
-                    : "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent"
+                    : "border-b-[1px] border-b-OpacityColor rounded-sm py-2 bg-transparent cursor-pointer"
                 }`}
                 labelItem={"Repeat Password*"}
                 InputType={"password"}
