@@ -550,7 +550,7 @@ const SignUp = () => {
                 className={`${
                   userInfoError.CheckboxError
                     ? "text-red-500 font-Josefin text-base"
-                    : "font-Josefin text-base text-FtextColor"
+                    : "font-Josefin text-sm md:text-base text-FtextColor"
                 }`}
               >
                 {userInfoError.CheckboxError
@@ -561,21 +561,25 @@ const SignUp = () => {
           </div>
           <div className="bg-gray-200 py-6 p-6 mb-20">
             {loading ? (
-              <button type="button" class="bg-indigo-500 py-2 w-48 justify-center rounded-sm flex items-center text-CommonColor font-Josefin">
-              <svg class="animate-spin h-5 w-5 mr-3 border-4 border-t-4 border-b-white border-gray-200 rounded-full" viewBox="0 0 24 24">              
-              </svg>
-              Processing...
-            </button>
-            ):(
               <button
-              className="py-2 w-48 bg-BtnColor text-CommonColor font-Josefin rounded-sm"
-              onClick={HandleSignup}
-            >
-              Sign Up
-            </button>
+                type="button"
+                class="bg-indigo-500 py-2 w-48 justify-center rounded-sm flex items-center text-CommonColor font-Josefin"
+              >
+                <svg
+                  class="animate-spin h-5 w-5 mr-3 border-4 border-t-4 border-b-white border-gray-200 rounded-full"
+                  viewBox="0 0 24 24"
+                ></svg>
+                Processing...
+              </button>
+            ) : (
+              <button
+                className="py-2 w-48 bg-BtnColor text-CommonColor font-Josefin rounded-sm"
+                onClick={HandleSignup}
+              >
+                Sign Up
+              </button>
             )}
-          
-          </div>
+          </div>      
         </div>
       </div>
     </>

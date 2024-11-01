@@ -6,6 +6,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import { FaRegUser } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa6";
 import { FaCartPlus } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 
@@ -59,12 +60,16 @@ const Header = () => {
               </div>
               <div>
                 <div className="flex items-center text-CommonColor cursor-pointer gap-x-2">
-                  <p className="text-CommonColor font-Josefin text-sm font-semibold">
-                    Login
-                  </p>
-                  <span>
-                    <FaRegUser className="w-[14px] h-[14px]" />
-                  </span>
+                  <Link to={"/account"}>
+                    <p className="text-CommonColor font-Josefin text-sm font-semibold active:text-green-400">
+                      Login
+                    </p>
+                  </Link>
+                  <Link to={"/account"}>
+                    <span>
+                      <FaRegUser className="w-[14px] h-[14px] active:text-green-400" />
+                    </span>
+                  </Link>
                 </div>
               </div>
               <div className="hidden lg:block">

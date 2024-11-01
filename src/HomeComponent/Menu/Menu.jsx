@@ -10,6 +10,7 @@ import { FaProductHunt } from "react-icons/fa";
 import { FaBlogger } from "react-icons/fa";
 import { FaShopify } from "react-icons/fa";
 import { IoMdContacts } from "react-icons/io";
+import { FaUser } from "react-icons/fa";
 
 
 
@@ -59,12 +60,17 @@ const HandleCancelMenu = () => {
                       Menu
                     </h2>
 
-                    <span className="cursor-pointer text-CommonColor active:text-red-500" onClick={HandleCancelMenu}>X</span>
+                    <span
+                      className="cursor-pointer text-CommonColor active:text-red-500"
+                      onClick={HandleCancelMenu}
+                    >
+                      X
+                    </span>
                   </div>
                   <NavLink
                     to={"/"}
                     className={
-                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0"
+                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0 focus:bg-gray-300"
                     }
                   >
                     <span className="pl-5 md:hidden">
@@ -75,7 +81,7 @@ const HandleCancelMenu = () => {
                   <NavLink
                     to={"/"}
                     className={
-                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0"
+                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0 focus:bg-gray-300"
                     }
                   >
                     <span className="pl-5 md:hidden">
@@ -86,7 +92,7 @@ const HandleCancelMenu = () => {
                   <NavLink
                     to={"/"}
                     className={
-                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0"
+                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0 focus:bg-gray-300"
                     }
                   >
                     <span className="pl-5 md:hidden">
@@ -97,7 +103,7 @@ const HandleCancelMenu = () => {
                   <NavLink
                     to={"/"}
                     className={
-                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0"
+                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0 focus:bg-gray-300"
                     }
                   >
                     <span className="pl-5 md:hidden">
@@ -108,7 +114,7 @@ const HandleCancelMenu = () => {
                   <NavLink
                     to={"/shop"}
                     className={
-                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0"
+                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0 focus:bg-gray-300"
                     }
                   >
                     <span className="pl-5 md:hidden">
@@ -119,13 +125,24 @@ const HandleCancelMenu = () => {
                   <NavLink
                     to={"/contact"}
                     className={
-                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0"
+                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0 focus:bg-gray-300"
                     }
                   >
                     <span className="pl-5 md:hidden">
                       <IoMdContacts />
                     </span>
                     <h3>Contact</h3>
+                  </NavLink>
+                  <NavLink
+                    to={"/account"}
+                    className={
+                      "text-base flex items-center gap-x-4 font-Lato w-56 md:w-0 py-3 md:py-0 md:hover:bg-none hover:bg-gray-300 border-b-[1px] border-b-gray-300 md:border-b-0 md:border-b-gray-0 md:hidden focus:bg-gray-300"
+                    }
+                  >
+                    <span className="pl-5 md:hidden">
+                      <FaUser />
+                    </span>
+                    <h3>Login</h3>
                   </NavLink>
                 </div>
               </div>
@@ -147,7 +164,10 @@ const HandleCancelMenu = () => {
                 />
               </div>
             </div>
-            <div className="cursor-pointer md:hidden active:text-green-400" onClick={HandleshowMenu}>
+            <div
+              className="cursor-pointer md:hidden active:text-green-400"
+              onClick={HandleshowMenu}
+            >
               <span>
                 <FaBars />
               </span>
