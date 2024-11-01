@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { store } from '../Redux/Store/Store.js'
 import { Provider } from 'react-redux'
+import fireapp from '../Firebase/Firebase.js'
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(

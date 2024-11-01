@@ -52,7 +52,7 @@ const handleDescription = () => {
               <h2 className="font-Josefin text-base font-bold text-FtextColor">
                 John Ford
               </h2>
-              <p className="font-Josefin tex-sm text-justify mr-20 mt-4 text-OpacityColor">
+              <p className="font-Josefin tex-sm text-justify lg:mr-20 mt-4 text-OpacityColor">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Consequuntur consequatur officia quas nesciunt dolores nemo
                 numquam sit quia maxime placeat asperiores reprehenderit
@@ -65,7 +65,7 @@ const handleDescription = () => {
         <div>
           {description && (
             <div className="mt-10">
-              <p className="font-Josefin tex-sm text-justify mr-20 mt-4 text-OpacityColor">
+              <p className="font-Josefin tex-sm text-justify lg:mr-20 mt-4 text-OpacityColor">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Consequuntur consequatur officia quas nesciunt dolores nemo
                 numquam sit quia maxime placeat asperiores reprehenderit
@@ -93,7 +93,7 @@ const handleDescription = () => {
                 id="Name"
                 name="Name"
                 placeholder="Your Name Here"
-                className="border-b-[1px] border-b-gray-200 w-1/2"
+                className="border-b-[1px] border-b-gray-200 w-full md:w-2/3 lg:w-1/2"
               />
             </div>
             <div className="flex flex-col gap-y-2">
@@ -108,7 +108,7 @@ const handleDescription = () => {
                 id="Email"
                 name="Email"
                 placeholder="Your Email Here"
-                className="border-b-[1px] border-b-gray-200 w-1/2"
+                className="border-b-[1px] border-b-gray-200 w-full md:w-2/3 lg:w-1/2"
               />
             </div>
             <div className="flex flex-col gap-y-2">
@@ -123,13 +123,13 @@ const handleDescription = () => {
                 id="Review"
                 name="Review"
                 placeholder="Your Review Here"
-                className="border-b-[1px] border-b-gray-200 w-1/2 min-h-20"
+                className="border-b-[1px] border-b-gray-200 w-full md:w-2/3 lg:w-1/2 min-h-20"
               ></textarea>
             </div>
             <div className="pb-20">
               <button
                 id="Reviewbtn"
-                className="px-8 py-1 bg-BtnColor rounded-sm text-CommonColor font-bold"
+                className="px-12 py-1 bg-BtnColor rounded-sm text-CommonColor font-bold"
               >
                 Post
               </button>

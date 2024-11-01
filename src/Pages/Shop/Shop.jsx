@@ -12,8 +12,8 @@ const Shop = () => {
       </div>
       <div className="container">
         <div className="flex">
-          <ShopLeft className="w-[20%] mt-20" />
-          <ShopRight className="w-[85%] border-2 border-gray-300 mt-20" />
+          <ShopLeft className="w-full xl:w-[20%] mt-20" />
+          <ShopRight className="w-full xl:w-[85%] border-2 border-gray-300 mt-20 mx-4 xl:mx-0" />
         </div>
       </div>
     </>

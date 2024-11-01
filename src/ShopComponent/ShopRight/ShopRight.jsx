@@ -45,7 +45,7 @@ const ShopRight = ({className}) => {
         <div>
           <div className="px-4">
             {status.payload === "LOADING" ? (
-              <Loading className={"w-full h-[230px] rounded-md px-4 mt-4"} />
+              <Loading className={"min-w-[300px] lg:w-[900px] xl:w-full h-[230px] rounded-md px-4 mt-4"} />
             ) : status.payload === "ERROR" ? (
               <h2>Error</h2>
             ) : (

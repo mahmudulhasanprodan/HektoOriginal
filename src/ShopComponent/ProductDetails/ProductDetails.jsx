@@ -48,8 +48,8 @@ const HandleCart = () => {
           <ShopTitle Title={"Product Details"} />
         </div>
         <div className="container">
-          <div className="py-10 flex items-center gap-x-10">
-            <div className="w-1/2 h-full border-[2px] border-gray-400 rounded-sm shadow-lg">
+          <div className="py-10 flex flex-col md:flex-row items-center gap-x-10 px-4 xl:px-0 gap-y-16 md:gap-y-0">
+            <div className="w-full md:w-1/2 h-full border-[2px] border-gray-400 rounded-sm shadow-lg">
               <ProductImage ProductDataImage={DetailsData} />
             </div>
             <div>
@@ -72,7 +72,7 @@ const HandleCart = () => {
               />
             </div>
           </div>
-          <div className="mt-16">
+          <div className="mt-16  px-4 xl:px-0">
               <Descripstion />
           </div>
         </div>

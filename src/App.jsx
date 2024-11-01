@@ -7,7 +7,9 @@ import Account from './Pages/Account/Account';
 import Contact from './Pages/Contact/Contact';
 import Error from './Pages/Error/Error';
 import Cart from './Pages/Cart/Cart';
+import SignUp from './Pages/SignUp/SignUp';
 import { ToastContainer } from 'react-toastify';
+
 
 
 import {
@@ -30,6 +32,7 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<Contact />}></Route>
       <Route path="/error" element={<Error />}></Route>
       <Route path="/cart" element={<Cart />}></Route>
+      <Route path="/registration" element={<SignUp />}></Route>
     </Route>
   )
 );

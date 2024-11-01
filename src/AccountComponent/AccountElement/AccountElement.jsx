@@ -6,9 +6,9 @@ const AccountElement = () => {
     <>
       <div className="py-32">
         <div className="container">
-          <div className="flex items-center justify-center">
-            <div className="w-[545px] h-[474px] bg-CommonColor drop-shadow-CardShadow">
-              <div className="w-[430px] h-full m-auto mt-10">
+          <div className="flex items-center justify-center px-4 sm:px-0">
+            <div className="w-full sm:w-[545px] h-[474px] bg-CommonColor drop-shadow-CardShadow">
+              <div className="w-full sm:w-[430px] h-full m-auto mt-10 px-2 sm:px-0">
                 <div className="flex flex-col items-center justify-center">
                   <h2 className="font-Josefin font-bold text-2xl text-FtextColor">
                     Login

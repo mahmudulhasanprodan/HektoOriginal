@@ -20,7 +20,7 @@ const CatagoriesData = ({AllData=[one,Two,Three],subTitle,ColorItem,Rating}) => 
     
   return (
     <>
-      <div>
+      <div className="hidden xl:block">
         <div
           className="bg-gray-300 py-1 cursor-pointer flex items-center justify-between pr-4 border-l-gray-400"
           onClick={HandleBrandShow}
