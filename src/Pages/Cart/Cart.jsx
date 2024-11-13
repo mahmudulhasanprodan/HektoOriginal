@@ -142,7 +142,7 @@ const Cart = () => {
               </div>
             </div>
             {/* cart right part  */}
-            <div className="w-1/3 flex items-center justify-center relative">
+            <div className="w-1/3 flex items-center justify-center relative hidden">
               <div className="w-[295px] h-[285px] bg-FooterColor absolute top-0">
                 <Flex className={"flex-col gap-y-4 mt-4"}>
                   <div className="flex items-center justify-between px-4">
