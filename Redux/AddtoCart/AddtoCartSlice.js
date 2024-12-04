@@ -125,10 +125,27 @@ const initialState = {
             });
          };
       },
+      Gettotal: (state,action) =>{     
+       const cartItemvalue = state.CartItem.reduce(
+         (PreviousItem, currentItem) => {
+           const { price, cartQuantity, discountPercentage } = currentItem;
+           const TotalAmount = price * cartQuantity - discountPercentage;
+           PreviousItem.TotalAmount += Math.round(TotalAmount);
+           PreviousItem.TotalCartItem += cartQuantity;
+           return PreviousItem;
+         },
+         {
+           TotalCartItem: 0,
+           TotalAmount: 0,
+         }
+       ); 
+       state.TotalCartItem += cartItemvalue.TotalCartItem;
+       state.TotalAmount += cartItemvalue.TotalAmount;
+      }
     },
   });
   
 // Action creators are generated for each case reducer function
-export const {CartItem,RemoveItem,RemoveAll,Increment,Decrement} = AddtoCartSlice.actions
+export const {CartItem,RemoveItem,RemoveAll,Increment,Decrement,Gettotal} = AddtoCartSlice.actions
 
 export default AddtoCartSlice.reducer

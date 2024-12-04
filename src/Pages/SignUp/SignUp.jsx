@@ -10,8 +10,10 @@ import { db } from '../../../Firebase/Firebase';
 
 const SignUp = () => {
   const auth = getAuth();
-  const [loading,setloading] = useState(false);
 
+  
+  const [loading,setloading] = useState(false);
+  
   const [userInfo,setuserInfo] = useState({
     FirstName: "",
     LastName: "",

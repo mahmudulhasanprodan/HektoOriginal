@@ -12,7 +12,17 @@ import { RemoveItem,RemoveAll,Increment,Decrement} from '../../../Redux/AddtoCar
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const{CartItem}=  useSelector((state) => state.Cart);
+  const{CartItem,TotalAmount, TotalCartItem}=  useSelector((state) => state.Cart);
+
+  console.log(TotalAmount,TotalCartItem);
+  
+
+
+
+  
+
+
+  
 
   const [AddItem,setAddItem] = useState([]);
 
@@ -142,7 +152,7 @@ const Cart = () => {
               </div>
             </div>
             {/* cart right part  */}
-            <div className="w-1/3 flex items-center justify-center relative hidden">
+            <div className="w-1/3 flex items-center justify-center relative">
               <div className="w-[295px] h-[285px] bg-FooterColor absolute top-0">
                 <Flex className={"flex-col gap-y-4 mt-4"}>
                   <div className="flex items-center justify-between px-4">
@@ -159,7 +169,7 @@ const Cart = () => {
                       Totals:
                     </h2>
                     <span className="font-Lato text-base text-FtextColor">
-                      $360.00
+                     {TotalAmount}
                     </span>
                   </div>
                   <hr />
