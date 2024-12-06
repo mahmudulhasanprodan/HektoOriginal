@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Flex from "../../CommonComponent/Flex/Flex"
 import img from "../../assets/HomeComponentImages/Blog1.png"
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
 import ShopTitle from '../../ShopComponent/ShopTitle/ShopTitle';
 import { useDispatch, useSelector } from 'react-redux';
-import { RemoveItem,RemoveAll,Increment,Decrement} from '../../../Redux/AddtoCart/AddtoCartSlice';
+import { RemoveItem,RemoveAll,Increment,Decrement, Gettotal} from '../../../Redux/AddtoCart/AddtoCartSlice';
 
 
 
@@ -14,9 +14,11 @@ const Cart = () => {
   const dispatch = useDispatch();
   const{CartItem,TotalAmount, TotalCartItem}=  useSelector((state) => state.Cart);
 
-  console.log(TotalAmount,TotalCartItem);
-  
 
+  
+useEffect(() => {
+   dispatch(Gettotal());
+},[dispatch,CartItem])
 
 
   
@@ -157,10 +159,10 @@ const Cart = () => {
                 <Flex className={"flex-col gap-y-4 mt-4"}>
                   <div className="flex items-center justify-between px-4">
                     <h2 className="font-Lato font-semibold text-base text-FtextColor">
-                      Subtotals:
+                      Total Item:
                     </h2>
                     <span className="font-Lato text-base text-FtextColor">
-                      $234.00
+                      {TotalCartItem}
                     </span>
                   </div>
                   <hr />

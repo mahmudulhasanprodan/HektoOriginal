@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Flex from '../../CommonComponent/Flex/Flex';
 import { FaPhoneVolume } from "react-icons/fa6";
 import { GrMailOption } from "react-icons/gr";
@@ -7,10 +7,28 @@ import { FaRegUser } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa6";
 import { FaCartPlus } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import { useDispatch,useSelector } from 'react-redux';
+
+import { Gettotal } from '../../../Redux/AddtoCart/AddtoCartSlice';
 
 
 
 const Header = () => {
+  const dispatch =useDispatch();
+
+  const[ShowCart,setShowCart] = useState(false);
+
+  const HandleCart = () => {
+    setShowCart(!ShowCart);
+  };
+const{TotalAmount, TotalCartItem, CartItem}=useSelector((state) => state.Cart);
+
+
+  
+
+
+
+
   return (
     <>
       <div className="bg-HeaderTopColor hidden md:block">
@@ -82,10 +100,73 @@ const Header = () => {
                   </span>
                 </div>
               </div>
-              <div className="text-CommonColor cursor-pointer hidden lg:block">
-                <span className="font-bold">
+              <div
+                className="text-CommonColor cursor-pointer hidden lg:block "
+                onClick={HandleCart}
+              >
+                <span
+                  className={`${
+                    ShowCart ? "text-green-400 font-bold" : "font-bold"
+                  }`}
+                >
                   <FaCartPlus />
                 </span>
+                <div className="absolute top-1 right-10">
+                  <div className="w-6 h-6 rounded-full bg-CommonColor">
+                    <p className="text-red-500 font-bold text-sm flex items-center justify-center h-full">{TotalCartItem}</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                {ShowCart && (
+                  <div className="absolute top-9 right-8 z-10">
+                    <div className="bg-FooterBtmColor h-[400px] w-[300px] py-2 px-2 relative overflow-y-scroll">
+                      {CartItem?.map((item) => (
+                        <div
+                          className="flex items-center gap-x-3 mt-2 bg-blue-200 py-2 cursor-pointer px-1"
+                          key={item.id}
+                        >
+                          <div className="bg-CommonColor border-2 border-blue-200 w-30 h-20">
+                            <img
+                              src={item.thumbnail}
+                              alt={item.thumbnail}
+                              className="w-30 h-20"
+                            />
+                          </div>
+                          <div className="flex flex-col">
+                            <h2 className="text-base font-Lato">
+                              {item.title
+                                ? `${item.title.slice(0, 15)}...`
+                                : "No Title"}
+                            </h2>
+                            <span className="font-Lato text-sm">
+                              ${item.price}
+                            </span>
+                            <div className="absolute right-6">
+                              <p className="cursor-pointer font-bold text-red-500">
+                                X
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    <div>
+                      <div className="flex items-center justify-between bg-CommonColor h-24 px-2 shadow-md">
+                        <div>
+                          <button className="px-3 py-2 bg-green-400 rounded-md">
+                            View Details
+                          </button>
+                        </div>
+                        <div>
+                          <button className="px-10 py-2 bg-blue-400 rounded-md">
+                            Procceed
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
             {/* Right item list */}

@@ -127,7 +127,7 @@ const initialState = {
       },
       Gettotal: (state,action) =>{     
        const cartItemvalue = state.CartItem.reduce(
-         (PreviousItem, currentItem) => {
+         (PreviousItem, currentItem) => {              
            const { price, cartQuantity, discountPercentage } = currentItem;
            const TotalAmount = price * cartQuantity - discountPercentage;
            PreviousItem.TotalAmount += Math.round(TotalAmount);
