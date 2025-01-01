@@ -21,6 +21,8 @@ const initialState = {
         const FindIndex = state.CartItem.findIndex(
           (item) => item.id === action.payload.id
         );
+        console.log(FindIndex);
+        
         if (FindIndex >= 0) {
           state.CartItem[FindIndex].cartQuantity += 1;
           localStorage.setItem("CartItem", JSON.stringify(state.CartItem));
@@ -91,6 +93,7 @@ const initialState = {
         const FindIndex = state.CartItem.findIndex(
           (item) => item.id === action.payload.id
         );
+      
         if(FindIndex >= 0){
           state.CartItem[FindIndex].cartQuantity += 1;
           toast.success(`${action.payload.title} Increased`, {

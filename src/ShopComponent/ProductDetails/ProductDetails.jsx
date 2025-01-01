@@ -25,6 +25,8 @@ useEffect(() => {
 
 const{value,status}=useSelector((state) => state.Product);
 
+console.log(value);
+
 
 useEffect(() => {
       if(status.payload === "IDLE" ){

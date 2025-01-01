@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Flex from '../../CommonComponent/Flex/Flex';
 import { FaPhoneVolume } from "react-icons/fa6";
 import { GrMailOption } from "react-icons/gr";
@@ -6,7 +6,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import { FaRegUser } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa6";
 import { FaCartPlus } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 import { useDispatch,useSelector } from 'react-redux';
 
 import { Gettotal } from '../../../Redux/AddtoCart/AddtoCartSlice';
@@ -16,6 +16,20 @@ import { Gettotal } from '../../../Redux/AddtoCart/AddtoCartSlice';
 const Header = () => {
   const dispatch =useDispatch();
 
+ const HeaderRef = useRef();
+ const CartRef = useRef();
+ 
+ useEffect(() => {
+  window.addEventListener('click', (e) => {
+   if(!HeaderRef.current.contains(e.target)){
+    setShowCart(false);
+   } 
+   if(CartRef.current.contains(e.target)){
+    setShowCart(true);
+   }
+  }) 
+ },[])
+ 
   const[ShowCart,setShowCart] = useState(false);
 
   const HandleCart = () => {
@@ -24,14 +38,16 @@ const Header = () => {
 const{TotalAmount, TotalCartItem, CartItem}=useSelector((state) => state.Cart);
 
 
-  
+
+
+   
 
 
 
 
   return (
     <>
-      <div className="bg-HeaderTopColor hidden md:block">
+      <div className="bg-HeaderTopColor hidden md:block" ref={HeaderRef}>
         <div className="container">
           <Flex className={"items-center justify-between py-2 px-4 xl:px-0"}>
             <div className="flex items-center gap-x-20">
@@ -117,7 +133,7 @@ const{TotalAmount, TotalCartItem, CartItem}=useSelector((state) => state.Cart);
                   </div>
                 </div>
               </div>
-              <div>
+              <div ref={CartRef}>
                 {ShowCart && (
                   <div className="absolute top-9 right-8 z-10">
                     <div className="bg-FooterBtmColor h-[400px] w-[300px] py-2 px-2 relative overflow-y-scroll">
